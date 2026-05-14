@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>萊茵河谷 4人 Workation 手帳報告</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;700&display=swap');
+        
+        :root {
+            --paper-color: #fcfaf2;
+            --ink-color: #3d3d3d;
+            --accent-red: #b22222;
+            --accent-blue: #4682b4;
+            --accent-green: #556b2f;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #e5e5e5;
+            color: var(--ink-color);
+            line-height: 1.8;
+        }
+
+        .journal-container {
+            background-color: var(--paper-color);
+            background-image: 
+                radial-gradient(#d1d1d1 1px, transparent 1px),
+                linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px);
+            background-size: 20px 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        .handwritten-quote {
+            font-family: 'Noto Serif TC', serif;
+            font-style: italic;
+            border-left: 3px solid var(--accent-blue);
+            padding-left: 1rem;
+            color: #555;
+        }
+
+        .stamp-badge {
+            display: inline-block;
+            border: 2px solid var(--accent-red);
+            color: var(--accent-red);
+            padding: 2px 10px;
+            border-radius: 4px;
+            transform: rotate(-5deg);
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .card-polaroid {
+            background: white;
+            padding: 8px 8px 24px 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #ddd;
+            transform: rotate(1deg);
+            max-width: 220px;
+        }
+
+        .card-polaroid img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            background: #eee;
+        }
+
+        .budget-table th {
+            background-color: #f1f1f1;
+            font-weight: 700;
+        }
+
+        .budget-table td, .budget-table th {
+            border: 1px solid #e2e8f0;
+            padding: 12px;
+        }
+
+        .sketch-border {
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+        }
+
+        .photo-frame {
+            width: 120px;
+            height: 120px;
+            background: #eee;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            flex-shrink: 0;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .photo-annotation {
+            font-size: 0.7rem;
+            color: #888;
+            margin-top: 0.25rem;
+            font-style: italic;
+            text-align: center;
+            width: 120px;
+        }
+    </style>
+</head>
+<body class="py-10 px-4">
+
+    <div class="journal-container max-w-4xl mx-auto p-6 md:p-12 rounded-lg relative overflow-hidden">
+        
+        <div class="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
+            <i class="fas fa-car-side fa-8x"></i>
+        </div>
+
+        <header class="mb-16">
+            <div class="flex justify-between items-start mb-6">
+                <div>
+                    <div class="stamp-badge mb-4">4-Person Group 2025</div>
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-800">萊茵河谷：四人的深度 Workation 實驗</h1>
+                    <p class="text-gray-500 mt-2 font-medium">生活風格分析師與團隊的 10 日手帳報告</p>
+                </div>
+            </div>
+            
+            <div class="handwritten-quote my-8 text-lg">
+                「升級的不只是座駕，更是四個人共同激盪的思緒... 在河谷的微風中，我們找到了工作與生活的最優解。」
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                <div class="sketch-border p-5 bg-white/50">
+                    <h3 class="font-bold border-b mb-3 text-blue-900"><i class="fas fa-tools mr-2"></i>整備資訊</h3>
+                    <ul class="text-sm space-y-2">
+                        <li><span class="font-bold">租用車型：</span> BMW X3 (空間升級首選)</li>
+                        <li><span class="font-bold">行程人數：</span> 4 人同行</li>
+                        <li><span class="font-bold">租車總額：</span> TWD 34,680 (含全險)</li>
+                        <li><span class="font-bold">取車地點：</span> 科隆 (Cologne)</li>
+                    </ul>
+                </div>
+                <div class="flex items-center justify-center">
+                    <div class="card-polaroid">
+                        <img src="https://images.unsplash.com/photo-1541443131876-44b03de101c5?auto=format&fit=crop&q=80&w=400" alt="BMW X3">
+                        <p class="text-center mt-2 text-xs text-gray-500 italic">Our BMW X3 Upgrade</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-8"><i class="fas fa-pen-nib mr-2"></i>Workation 日誌</h2>
+            
+            <div class="space-y-12 relative border-l-2 border-dashed border-blue-100 ml-4 pl-8">
+                
+                <div class="relative flex flex-col md:flex-row gap-4">
+                    <div class="flex-1">
+                        <h3 class="font-bold text-lg text-gray-700">7/18：科隆會師</h3>
+                        <p class="mt-2 text-gray-700 leading-relaxed">全員抵達科隆。入住 Premier Inn Köln City Süd，在古老城市的南側安頓下來，為明日的取車與長征儲備體力。</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="photo-frame">
+                            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/227571520.jpg?k=3f8155986877073289069d30009696956272580a1c6a282f1a660a9f0e159676&o=" alt="Premier Inn">
+                        </div>
+                        <div class="photo-annotation">科隆普瑞米爾飯店</div>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col md:flex-row gap-4">
+                    <div class="flex-1">
+                        <h3 class="font-bold text-lg text-blue-800">7/19：啟程，跌入彩色小鎮</h3>
+                        <p class="mt-2 text-gray-700 leading-relaxed">10:00 取車 X3。首站龍岩堡，參觀這座如童話般的宮殿。傍晚入住林茨 Margaretes Gästehaus，升級後的空間讓四人入住依然舒展。</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="photo-frame">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/51/8c/11/schloss-drachenburg-s.jpg?w=1400&h=-1&s=1" alt="龍岩堡">
+                        </div>
+                        <div class="photo-annotation">龍岩堡</div>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col md:flex-row gap-4">
+                    <div class="flex-1">
+                        <h3 class="font-bold text-lg text-red-800">7/21：跨越河岸與森林的秘境</h3>
+                        <p class="mt-2 text-gray-700 leading-relaxed">駕著 X3 登上汽車渡輪，隨後探訪隱身山谷的埃爾茨城堡。傍晚抵達科布倫茲，入住「黑熊」飯店，開啟河畔辦公模式。</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="photo-frame">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Le_ch%C3%A2teau_d%27Eltz_%28Burg_Eltz%29_en_allemagne_%28cropped%29.jpg/960px-Le_ch%C3%A2teau_d%27Eltz_%28Burg_Eltz%29_en_allemagne_%28cropped%29.jpg" alt="埃爾茨城堡">
+                        </div>
+                        <div class="photo-annotation">埃爾茨城堡</div>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col md:flex-row gap-4">
+                    <div class="flex-1">
+                        <h3 class="font-bold text-lg text-orange-800">7/22-23：科布倫茲的創意交會</h3>
+                        <p class="mt-2 text-gray-700 leading-relaxed">在兩河交匯的德意志之角獲得靈感。四人在新增的獨立房間中擁有安靜的視訊環境，傍晚則聚集在黑熊飯店討論未來的專案方向。</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="photo-frame">
+                            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/20/45/19.jpg" alt="德意志之角">
+                        </div>
+                        <div class="photo-annotation">德意志之角夕照</div>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col md:flex-row gap-4">
+                    <div class="flex-1">
+                        <h3 class="font-bold text-lg text-pink-800">7/24：巴哈拉赫與曼海姆移防</h3>
+                        <p class="mt-2 text-gray-700 leading-relaxed">穿過巴哈拉赫的古老石板路，在溢滿酒香的小鎮短暫工作。隨後駛向曼海姆，入住 Hilton Garden Inn，現代化的雙房配置大幅提升了團隊的工作效率。</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="photo-frame">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/0b/fa/7d/altes-haus.jpg?w=2000&h=-1&s=1" alt="巴哈拉赫">
+                        </div>
+                        <div class="photo-annotation">巴哈拉赫時光</div>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col md:flex-row gap-4">
+                    <div class="flex-1">
+                        <h3 class="font-bold text-lg text-purple-800">7/27：歸途與機場休整</h3>
+                        <p class="mt-2 text-gray-700 leading-relaxed">旅程進入尾聲。離開曼海姆，前往法蘭克福機場，入住 Staycity Aparthotels。在公寓式的空間裡整理這十天的數位資產，準備明日的飛行。</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="photo-frame">
+                            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/336474640.jpg?k=f5985874221774e64f7b6070621370df646876770f3f6e5e8e815e985880456c&o=" alt="Staycity">
+                        </div>
+                        <div class="photo-annotation">機場飯店</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-8"><i class="fas fa-coins mr-2"></i>四人團體結算表</h2>
+            
+            <div class="overflow-x-auto shadow-sm rounded-lg border border-gray-200">
+                <table class="w-full text-sm budget-table bg-white">
+                    <thead>
+                        <tr>
+                            <th>日期 / 地點</th>
+                            <th>住宿名稱</th>
+                            <th>預算分析 (EUR/TWD)</th>
+                            <th>團隊備註</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>7/18 (科隆)</td>
+                            <td>Premier Inn Köln City Süd</td>
+                            <td>€115.11</td>
+                            <td>1間房，首日集結</td>
+                        </tr>
+                        <tr>
+                            <td>7/19 - 7/21 (林茨)</td>
+                            <td>Margaretes Gästehaus</td>
+                            <td>NT$ 7,002 + €60</td>
+                            <td>空間升級，含稅金調整</td>
+                        </tr>
+                        <tr>
+                            <td>7/21 - 7/24 (科布倫茲)</td>
+                            <td>Hotel Weinhaus Zum schwarzen Bären</td>
+                            <td>€492 + €387</td>
+                            <td>共二房，適合四人隱私需求</td>
+                        </tr>
+                        <tr>
+                            <td>7/24 - 7/27 (曼海姆)</td>
+                            <td>Hilton Garden Inn Mannheim</td>
+                            <td>€356.29 + €356.29</td>
+                            <td>同價位新增一間房</td>
+                        </tr>
+                        <tr>
+                            <td>7/27 - 7/28 (機場)</td>
+                            <td>Staycity Aparthotels, Frankfurt Airport</td>
+                            <td>€99.41</td>
+                            <td>1間公寓房，利於次日登機</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-8 p-6 bg-blue-50 rounded-lg border-2 border-blue-100">
+                <h3 class="font-bold text-blue-800 mb-2">總體規劃彙報</h3>
+                <p class="text-sm mb-4">交通支出：<span class="font-bold text-red-700">TWD 34,680</span> (BMW X3 升級方案)。</p>
+                <p class="text-sm text-gray-600">
+                    四人同行模式下，透過<span class="font-bold underline">增加獨立房數</span>與<span class="font-bold underline">升級休旅空間</span>，確保了工作的高效產出與休息品質。
+                </p>
+            </div>
+        </section>
+
+        <footer class="text-center mt-20">
+            <div class="inline-block px-10 py-4 bg-gray-800 text-white rounded-full">
+                團隊工作與生活的完美交會
+            </div>
+            <p class="mt-8 text-gray-400 text-sm italic">
+                萊茵河谷 Workation 4人特別企劃 2025
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
