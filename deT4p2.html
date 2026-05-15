@@ -250,35 +250,63 @@
         </section>
 
         <!-- 原版本預算表格設計 -->
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-8"><i class="fas fa-coins mr-2"></i>2026 暑假住宿預預算</h2>
-            <div class="overflow-x-auto shadow-sm rounded-lg border border-gray-200">
-                <table class="w-full text-sm budget-table bg-white text-center">
-                    <thead>
-                        <tr>
-                            <th class="w-1/4">日期 / 地點</th>
-                            <th class="w-1/4">主要房型</th>
-                            <th class="w-1/4 highlight-add">新增房型</th>
-                            <th class="w-1/4">備註</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>7/18 (科隆)</td><td>€ 115.11</td><td class="text-gray-400">--</td><td>子庭母女 (Premier Inn)</td></tr>
-                        <tr><td>7/19 - 7/21 (林茨)</td><td>€ 208.80</td><td class="highlight-add">€ 60.00</td><td>全員 (Margaretes)</td></tr>
-                        <tr><td>7/21 - 7/24 (科布倫茲)</td><td>€ 492.00</td><td class="highlight-add">€ 387.00</td><td>全員 (2+1房)</td></tr>
-                        <tr><td>7/24 - 7/27 (曼海姆)</td><td>€ 356.29</td><td class="highlight-add">€ 356.29</td><td>全員 (2房)</td></tr>
-                        <tr><td>7/27 - 7/28 (回程日)</td><td colspan="2" class="bg-gray-50 py-4 px-2">
-                            <div class="flex justify-around items-center px-4">
-                                <div class="text-center"><b>Staycity 機場飯店</b><br><span class="text-blue-700">€ 99.41</span></div>
-                                <div class="h-10 w-px bg-gray-300 mx-2"></div>
-                                <div class="text-center"><b>科隆希爾頓</b><br><span class="text-blue-700">€ 131.04</span></div>
-                            </div>
-                        </td><td>各自返程</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
+      <section class="mb-16">
+        <h2 class="text-2xl font-bold border-b-2 border-gray-200 pb-2 mb-8"><i class="fas fa-coins mr-2"></i>2026 暑假住宿資訊表</h2>
+        <div class="overflow-x-auto shadow-sm rounded-lg border border-gray-200">
+            <table class="w-full text-sm budget-table bg-white text-center">
+                <thead>
+                    <tr>
+                        <th class="w-1/4">日期 / 地點</th>
+                        <th class="w-1/3">飯店明細</th>
+                        <th class="w-1/6">主要房型</th>
+                        <th class="w-1/6 highlight-add">新增房型</th>
+                        <th class="w-1/6">備註</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7/18 (科隆)</td>
+                        <td class="text-left text-xs"><a href="https://www.premierinn.com/gb/en/hotels/germany/north-rhine-westphalia/cologne/premier-inn-koeln-city-sued.html" class="hotel-link" target="_blank">Premier Inn City Süd</a></td>
+                        <td>€ 115.11</td>
+                        <td class="text-gray-400">--</td>
+                        <td>子庭母女</td>
+                    </tr>
+                    <tr>
+                        <td>7/19-7/21 (林茨)</td>
+                        <td class="text-left text-xs"><a href="https://www.booking.com/hotel/de/margaretes-gastehaus.zh-tw.html" class="hotel-link" target="_blank">Margaretes Gästehaus</a></td>
+                        <td>€ 208.80</td>
+                        <td class="highlight-add">€ 60.00 (+2張單人充氣床墊 *2晚)</td>
+                        <td>包棟、全員均分</td>
+                    </tr>
+                    <tr>
+                        <td>7/21-7/24 (科布倫茲)</td>
+                        <td class="text-left text-xs"><a href="https://www.schwarzer-baeren-koblenz.de/" class="hotel-link" target="_blank">Zum schwarzen Bären</a></td>
+                        <td>€ 492.00</td>
+                        <td class="highlight-add">€ 387.00</td>
+                        <td>2+1房/ Cavy, 唯宣, 子庭 3間房</td>
+                    </tr>
+                    <tr>
+                        <td>7/24-7/27 (曼海姆)</td>
+                        <td class="text-left text-xs"><a href="https://www.hilton.com/en/hotels/mhicigi-garden-inn-mannheim/" class="hotel-link" target="_blank">Garden Inn (Hilton)</a></td>
+                        <td>€ 356.29</td>
+                        <td class="highlight-add">€ 356.29</td>
+                        <td>獨立雙床房 x 2間</td>
+                    </tr>
+                    <tr>
+                        <td>7/27-7/28 (回程)</td>
+                        <td class="text-left text-xs leading-tight">
+                            <a href="https://www.hilton.com/en/hotels/cgnhihi-hilton-cologne/" class="hotel-link" target="_blank">科隆希爾頓</a> (C)<br>
+                            <a href="https://www.staycity.com/cologne/messenger-street" class="hotel-link" target="_blank">Staycity 機場</a> (Z)
+                        </td>
+                        <td>€ 131.04</td>
+                        <td class="highlight-add">€ 99.41</td>
+                        <td>兵分兩路</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+        
         <!-- 結算明細 (新增部分) -->
 <section class="mt-20 text-center">
             <button class="toggle-btn" onclick="document.getElementById('settlement').style.display='block'; this.style.display='none';">
