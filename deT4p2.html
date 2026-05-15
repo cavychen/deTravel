@@ -67,7 +67,7 @@
         .card-polaroid img { width: 100%; height: 140px; object-fit: cover; background: #eee; }
 
         .budget-table th { background-color: #f8f9fa; font-weight: 700; text-align: center; }
-        .budget-table td, .budget-table th { border: 1px solid #e2e8f0; padding: 10px; }
+        .budget-table td, .budget-table th { border: 1px solid #e2e8f0; padding: 10px; vertical-align: middle; }
         .highlight-add { color: var(--accent-red); font-weight: 600; background-color: #fffafa; }
 
         .photo-frame {
@@ -87,7 +87,9 @@
         <!-- 1. 旅程序言 -->
         <header class="mb-16">
             <div class="stamp-badge mb-4">4-Person Team 2026</div>
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-800">萊茵河畔的夏日散策：我們四人的 2026 Workcation 練習曲</h1>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
+                萊茵河畔的夏日散策：<br>我們四人的 2026 Workcation 練習曲
+            </h1>
             
             <div class="handwritten-quote my-8 text-lg">
                 「萊茵河的水色與夥伴的笑聲，交織成這個盛夏最美的風景。工作不再是孤島，而是一次與重要的人共同譜寫的夏日記事。」
@@ -121,7 +123,7 @@
                 <div class="relative flex flex-col md:flex-row gap-4">
                     <div class="flex-1">
                         <h3 class="font-bold text-lg text-gray-700">7/18：科隆會師</h3>
-                        <p class="mt-2 text-gray-700 leading-relaxed">子庭母女抵達科隆飯店。入住 <span class="font-bold">Premier Inn Köln City Süd</span>，在古老城市的南側安頓下來，為明日的取車與長征儲備體力。</p>
+                        <p class="mt-2 text-gray-700 leading-relaxed">子庭母女抵達科隆飯店。入住 <span class="font-bold">Premier Inn Köln City Süd</span>，為明日的取車與長征儲備體力。</p>
                     </div>
                     <div class="flex flex-col items-center">
                         <div class="photo-frame"><img src="https://lh3.googleusercontent.com/p/AF1QipOIYaP2t7N36u8FmI_hsgFjriUZQCuY0lQf-bHj=s1360-w1360-h1020-rw" alt="Premier Inn"></div>
@@ -133,7 +135,7 @@
                 <div class="relative flex flex-col md:flex-row gap-4">
                     <div class="flex-1">
                         <h3 class="font-bold text-lg text-blue-800">7/19：啟程，彩色小鎮與龍岩堡</h3>
-                        <p class="mt-2 text-gray-700 leading-relaxed">早上 10:00 科隆希爾頓飯店全員集合，取車 BMW X3。首站前往國王溫特 (Königswinter)，搭乘帶著時光鏽跡的齒軌火車登上龍岩山，參觀龍岩堡 (Schloss Drachenburg)。傍晚抵達林茨，入住 Margaretes Gästehaus，彩色小鎮如夢似幻。</p>
+                        <p class="mt-2 text-gray-700 leading-relaxed">早上 10:00 全員集合取車。首站國王溫特參觀龍岩堡，傍晚抵達林茨，入住 Margaretes Gästehaus，彩色小鎮如夢似幻。</p>
                     </div>
                     <div class="flex flex-col items-center">
                         <div class="photo-frame"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/51/8c/11/schloss-drachenburg-s.jpg?w=1400&h=-1&s=1" alt="龍岩堡"></div>
@@ -141,22 +143,11 @@
                     </div>
                 </div>
 
-                <!-- 7/20 -->
-                <div class="relative flex flex-col md:flex-row gap-4">
-                    <div class="flex-1">
-                        <h3 class="font-bold text-lg text-green-800">7/20：木構屋間的數位遊牧</h3>
-                        <p class="mt-2 italic text-gray-600">「歷史感正是現代創意工作者最好的燃料。」</p>
-                        <p class="mt-2 text-gray-700 leading-relaxed">早晨 09:00 開啟線上會議。窗外是幾世紀前的半木構造建築，室內則是高速 Wi-Fi 與醇厚的黑咖啡。在充滿人文肌理的空間工作，思考的維度也隨之拓寬。<br>
-                        <span class="text-sm font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded">註：Cavy 工作日，其他三人小鎮自由行。</span></p>
-                    </div>
-                </div>
-
                 <!-- 7/21 -->
                 <div class="relative flex flex-col md:flex-row gap-4">
                     <div class="flex-1">
                         <h3 class="font-bold text-lg text-red-800">7/21：渡輪、城堡與河畔圖書館</h3>
-                        <p class="mt-2 text-gray-700 leading-relaxed">驅車駛上汽車渡輪，在萊茵河心漂移。隨後在深綠山谷尋見埃爾茨城堡 (Burg Eltz)，尖聳塔樓在薄霧中若隱若現。1:30~2:00 離開城堡，3:00 到科布倫茲 (Koblenz)。<br>
-                        <span class="text-sm font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded">分流：Cavy 於現代化圖書館享受專注工作時光，其他人逛街。17:30 集合回飯店。</span></p>
+                        <p class="mt-2 text-gray-700 leading-relaxed">驅車駛上汽車渡輪，隨後探訪埃爾茨城堡。下午在科布倫茲圖書館享受專注工作時光，其他人則在城市漫步探索。</p>
                     </div>
                     <div class="flex flex-col items-center">
                         <div class="photo-frame"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Le_ch%C3%A2teau_d%27Eltz_%28Burg_Eltz%29_en_allemagne_%28cropped%29.jpg/960px-Le_ch%C3%A2teau_d%27Eltz_%28Burg_Eltz%29_en_allemagne_%28cropped%29.jpg" alt="埃爾茨城堡"></div>
@@ -164,43 +155,11 @@
                     </div>
                 </div>
 
-                <!-- 7/22 -->
-                <div class="relative flex flex-col md:flex-row gap-4">
-                    <div class="flex-1">
-                        <h3 class="font-bold text-lg text-orange-800">7/22：德意志之角，金色的終曲</h3>
-                        <p class="mt-2 text-gray-700 leading-relaxed">白天為 Cavy 工作日，其他人自由行。17:00 工作告一段落，大家搭乘全景纜車直上要塞。俯瞰萊茵河與摩澤爾河在德意志之角 (Deutsches Eck) 匯流，夕陽將河面鋪上一層金箔。</p>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="photo-frame"><img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/20/45/19.jpg" alt="德意志之角"></div>
-                        <div class="photo-annotation">科布倫茲兩大河交會</div>
-                    </div>
-                </div>
-
-                <!-- 7/23 -->
-                <div class="relative flex flex-col md:flex-row gap-4">
-                    <div class="flex-1">
-                        <h3 class="font-bold text-lg text-yellow-700">7/23：在歷史與效率間精準切換</h3>
-                        <p class="mt-2 text-gray-700 leading-relaxed">中午移動到 Stolzenfels 城堡，下午換地方工作 (Einstein Kaffee - 城堡附近)。其他人自由行，也可以一起去城堡散步探索。</p>
-                    </div>
-                </div>
-
-                <!-- 7/24 -->
-                <div class="relative flex flex-col md:flex-row gap-4">
-                    <div class="flex-1">
-                        <h3 class="font-bold text-lg text-pink-800">7/24：巴哈拉赫的午餐與移防</h3>
-                        <p class="mt-2 text-gray-700 leading-relaxed">退房後開車到巴哈拉赫 (Bacharach)。午餐與活動 / 工作進行到下午 4:30，隨後開車前往曼海姆 (Mannheim)。</p>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="photo-frame"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/0b/fa/7d/altes-haus.jpg?w=2000&h=-1&s=1" alt="巴哈拉赫"></div>
-                        <div class="photo-annotation">巴哈拉赫古鎮</div>
-                    </div>
-                </div>
-
                 <!-- 7/25 -->
                 <div class="relative flex flex-col md:flex-row gap-4">
                     <div class="flex-1">
                         <h3 class="font-bold text-lg text-indigo-800">7/25：曼海姆的在地探遊與晚宴</h3>
-                        <p class="mt-2 text-gray-700 leading-relaxed">今日由 Bernhard 帶領我們四處遊玩。晚上與 Bernhard 夫妻、Andreas 老師一起共進晚餐。跨越國界的交流與歡笑聲，是這趟 Workcation 最美的風景。</p>
+                        <p class="mt-2 text-gray-700 leading-relaxed">今日由 Bernhard 帶領遊玩。晚上與 Bernhard 夫妻、Andreas 老師一起共進晚餐，享受盛夏最美的風景。</p>
                     </div>
                     <div class="flex flex-col items-center">
                         <div class="photo-frame"><img src="https://www.shutterstock.com/shutterstock/photos/2414597001/display_1500/stock-vector-four-people-sitting-at-a-dining-table-enjoying-a-meal-together-casual-dining-two-women-and-two-2414597001.jpg" alt="聚餐插圖"></div>
@@ -208,19 +167,11 @@
                     </div>
                 </div>
 
-                <!-- 7/26 -->
-                <div class="relative flex flex-col md:flex-row gap-4">
-                    <div class="flex-1">
-                        <h3 class="font-bold text-lg text-teal-800">7/26：曼海姆或海德堡自由行</h3>
-                        <p class="mt-2 text-gray-700 leading-relaxed">保留彈性的一天。大家可以選擇在曼海姆市區感受現代與歷史的交錯，或是前往附近的海德堡漫步於古堡間。</p>
-                    </div>
-                </div>
-
                 <!-- 7/27 -->
                 <div class="relative flex flex-col md:flex-row gap-4">
                     <div class="flex-1">
                         <h3 class="font-bold text-lg text-purple-800">7/27：歸途與兵分兩路</h3>
-                        <p class="mt-2 text-gray-700 leading-relaxed">白天由 Bernhard 帶領，隨後回到法蘭克福機場近郊的 BD 農場。行程結束後，先送子庭母女到機場飯店。接著 Cavy 與唯宣驅車回科隆還車，完成這趟自駕旅程。</p>
+                        <p class="mt-2 text-gray-700 leading-relaxed">由 Bernhard 帶領前往 BD 農場。結束後送子庭母女至機場飯店，Cavy 與唯宣驅車回科隆還車，完成這趟自駕旅程。</p>
                     </div>
                     <div class="flex flex-col items-center">
                         <div class="photo-frame"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHMkk1b3DJ8zDCH3T22cXxdBXRDX-vrMLZglW8t9YPSIBR9cdyH5yUasZ4PzcVPobXgSXyTJxRSACn42fGIcfRxxgW_Re9YI9bxsaqcN1VfIyKzyZD3O954CD5TQLoKu2sLwJ69K3W5BwvT=s1360-w1360-h1020-rw" alt="Staycity"></div>
@@ -240,9 +191,9 @@
                     <thead>
                         <tr>
                             <th class="w-1/4">日期 / 地點</th>
-                            <th class="w-1/4">房型 A</th>
-                            <th class="w-1/4 highlight-add">房型 B (新增房)</th>
-                            <th class="w-1/4">入住成員</th>
+                            <th class="w-1/4">主要房型</th>
+                            <th class="w-1/4 highlight-add">新增房型</th>
+                            <th class="w-1/4">備註</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -250,13 +201,13 @@
                             <td>7/18 (科隆)</td>
                             <td>€ 115.11</td>
                             <td class="text-gray-400">--</td>
-                            <td>子庭母女</td>
+                            <td>子庭母女 (Premier Inn)</td>
                         </tr>
                         <tr>
                             <td>7/19 - 7/21 (林茨)</td>
-                            <td>NT$ 7,002</td>
+                            <td>€ 208.80</td>
                             <td class="highlight-add">€ 60.00</td>
-                            <td>全員</td>
+                            <td>全員 (Margaretes)</td>
                         </tr>
                         <tr>
                             <td>7/21 - 7/24 (科布倫茲)</td>
@@ -271,16 +222,15 @@
                             <td>全員 (2房)</td>
                         </tr>
                         <tr>
-                            <td>7/27 - 7/28 (機場)</td>
-                            <td>€ 99.41</td>
-                            <td class="text-gray-400">--</td>
-                            <td>子庭母女</td>
-                        </tr>
-                        <tr>
-                            <td>7/27 - 7/28 (科隆)</td>
-                            <td>€ 131.04</td>
-                            <td class="text-gray-400">--</td>
-                            <td>Cavy+唯宣 (希爾頓)</td>
+                            <td>7/27 - 7/28 (回程日)</td>
+                            <td colspan="2" class="bg-gray-50 py-4">
+                                <div class="flex justify-around items-center">
+                                    <span>Staycity 機場飯店: <strong>€ 99.41</strong> (子庭母女)</span>
+                                    <div class="h-8 w-px bg-gray-300"></div>
+                                    <span>科隆希爾頓: <strong>€ 131.04</strong> (Cavy+唯宣)</span>
+                                </div>
+                            </td>
+                            <td>各自返程</td>
                         </tr>
                     </tbody>
                 </table>
